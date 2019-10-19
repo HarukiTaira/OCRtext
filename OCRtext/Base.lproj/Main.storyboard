@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="i5r-EK-i2f">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ホーム-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="homeViewController" customModule="OCRtext" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Cxg-rE-UtM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mZM-At-kuc">
+                                <rect key="frame" x="132" y="123" width="150" height="150"/>
+                                <color key="backgroundColor" red="0.01176470588" green="0.34901960780000002" blue="0.68235294120000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="1B0-iU-6ua"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="6X7-22-adW"/>
+                                    <constraint firstAttribute="width" constant="150" id="IGr-HM-eJ4"/>
+                                    <constraint firstAttribute="height" constant="150" id="fEr-5o-vSa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="電話番号">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds " value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius ">
+                                        <integer key="value" value="75"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="s7h-RD-IyR" kind="show" id="0hV-f7-EQS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XX1-12-hPf">
+                                <rect key="frame" x="132" y="373" width="150" height="150"/>
+                                <color key="backgroundColor" red="0.078431372550000003" green="0.69019607839999997" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="5q6-rX-4aE"/>
+                                    <constraint firstAttribute="height" constant="150" id="DBN-wE-I4G"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="郵便番号">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds " value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius ">
+                                        <integer key="value" value="75"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="T7Q-hC-uve" kind="show" id="Go8-0g-kEA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7CM-YW-GtK">
+                                <rect key="frame" x="132" y="623" width="150" height="150"/>
+                                <color key="backgroundColor" red="0.80000000000000004" green="0.54117647059999996" blue="0.33725490200000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="F6J-Hy-gUn"/>
+                                    <constraint firstAttribute="height" constant="150" id="mPJ-Pq-dit"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="お金">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius ">
+                                        <integer key="value" value="75"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds " value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="gOS-xz-aEw" kind="show" id="mS4-jf-Wk0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92156862750000001" green="0.8980392157" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="XX1-12-hPf" firstAttribute="centerY" secondItem="Cxg-rE-UtM" secondAttribute="centerY" id="5Ru-lQ-s00"/>
+                            <constraint firstItem="XX1-12-hPf" firstAttribute="centerX" secondItem="Cxg-rE-UtM" secondAttribute="centerX" id="Fnq-7h-SlN"/>
+                            <constraint firstItem="mZM-At-kuc" firstAttribute="top" secondItem="Gey-x6-Ddp" secondAttribute="top" constant="35" id="M83-mQ-A4T"/>
+                            <constraint firstItem="Gey-x6-Ddp" firstAttribute="bottom" secondItem="7CM-YW-GtK" secondAttribute="bottom" constant="89" id="aqN-Xt-6MP"/>
+                            <constraint firstItem="mZM-At-kuc" firstAttribute="centerX" secondItem="Cxg-rE-UtM" secondAttribute="centerX" id="bUP-EN-Uqb"/>
+                            <constraint firstItem="7CM-YW-GtK" firstAttribute="centerX" secondItem="Cxg-rE-UtM" secondAttribute="centerX" id="lS8-OQ-m8t"/>
+                            <constraint firstItem="XX1-12-hPf" firstAttribute="centerX" secondItem="Cxg-rE-UtM" secondAttribute="centerX" id="qye-Tw-YKK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Gey-x6-Ddp"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="ホーム" id="5bj-1v-edl"/>
+                    <connections>
+                        <outlet property="moneyButton" destination="7CM-YW-GtK" id="SeW-wp-EbZ"/>
+                        <outlet property="phoneButton" destination="mZM-At-kuc" id="Gs5-rD-u8e"/>
+                        <outlet property="postButton" destination="XX1-12-hPf" id="sT4-NP-6Bt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="118.52678571428571"/>
+        </scene>
+        <!--郵便番号スキャナー-->
+        <scene sceneID="tG8-rj-ROl">
+            <objects>
+                <viewController id="T7Q-hC-uve" customClass="postViewController" customModule="OCRtext" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YJS-fZ-5P7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="jyA-a2-A60">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <activityIndicatorView hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="w3c-OQ-Szq">
+                                        <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                                        <color key="color" cocoaTouchSystemColor="darkTextColor"/>
+                                    </activityIndicatorView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.60000002384185791" contentMode="scaleToFill" misplaced="YES" scrollEnabled="NO" editable="NO" textAlignment="center" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q8p-OZ-74f">
+                                        <rect key="frame" x="0.0" y="635" width="414" height="261"/>
+                                        <color key="backgroundColor" red="0.92156862750000001" green="0.8980392157" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="261" id="V6g-bY-jgp"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vge-Pt-IvA">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="584"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.92156862750000001" green="0.8980392157" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="q8p-OZ-74f" firstAttribute="centerX" secondItem="jyA-a2-A60" secondAttribute="centerX" id="0M1-RU-8aB"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="q8p-OZ-74f" secondAttribute="bottom" constant="-34" id="1bL-pe-uvP"/>
+                                    <constraint firstItem="vge-Pt-IvA" firstAttribute="top" secondItem="jyA-a2-A60" secondAttribute="topMargin" constant="-88" id="FWQ-tj-i7o"/>
+                                    <constraint firstItem="q8p-OZ-74f" firstAttribute="centerX" secondItem="w3c-OQ-Szq" secondAttribute="centerX" id="JEw-d5-rka"/>
+                                    <constraint firstItem="vge-Pt-IvA" firstAttribute="leading" secondItem="q8p-OZ-74f" secondAttribute="leading" id="JZi-Ez-Mjf"/>
+                                    <constraint firstItem="q8p-OZ-74f" firstAttribute="top" secondItem="vge-Pt-IvA" secondAttribute="bottom" constant="35" id="MYd-C3-AzU"/>
+                                    <constraint firstItem="vge-Pt-IvA" firstAttribute="trailing" secondItem="q8p-OZ-74f" secondAttribute="trailing" id="b6c-vb-d35"/>
+                                    <constraint firstItem="q8p-OZ-74f" firstAttribute="leading" secondItem="UFa-M1-Tor" secondAttribute="leading" id="f35-84-o66"/>
+                                    <constraint firstItem="w3c-OQ-Szq" firstAttribute="centerY" secondItem="jyA-a2-A60" secondAttribute="centerY" id="mWj-DW-QjN"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="UFa-M1-Tor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="hJc-Lf-L6c"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="郵便番号スキャナー" id="JI3-T8-lTu">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="camera" id="AVc-NU-xSO">
+                            <connections>
+                                <action selector="scanReceipts:" destination="T7Q-hC-uve" id="KL3-9t-c3R"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="activityIndicator" destination="w3c-OQ-Szq" id="sKE-3i-5MF"/>
+                        <outlet property="imagePick" destination="vge-Pt-IvA" id="zrF-Dy-Ev7"/>
+                        <outlet property="textView" destination="q8p-OZ-74f" id="mOh-eK-WDn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5sn-Pj-Qxx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1903" y="220"/>
+        </scene>
+        <!--電話番号スキャナー-->
+        <scene sceneID="wJH-Js-lIZ">
+            <objects>
+                <viewController id="s7h-RD-IyR" customClass="phoneViewController" customModule="OCRtext" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0kD-Ty-oLe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="sxE-PU-bhm">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                                <color key="color" cocoaTouchSystemColor="darkTextColor"/>
+                            </activityIndicatorView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.60000002384185791" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="center" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="huZ-P5-1H3">
+                                <rect key="frame" x="0.0" y="635" width="414" height="261"/>
+                                <color key="backgroundColor" red="0.92156862750000001" green="0.8980392157" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="261" id="JER-N4-zbe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="edI-yx-4cd">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92156862750000001" green="0.8980392157" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="huZ-P5-1H3" secondAttribute="bottom" constant="-34" id="5cj-pH-gFz"/>
+                            <constraint firstItem="huZ-P5-1H3" firstAttribute="leading" secondItem="L8U-JC-Km7" secondAttribute="leading" id="DzS-vK-O7x"/>
+                            <constraint firstItem="huZ-P5-1H3" firstAttribute="centerX" secondItem="0kD-Ty-oLe" secondAttribute="centerX" id="EPL-Qy-ecG"/>
+                            <constraint firstItem="huZ-P5-1H3" firstAttribute="centerX" secondItem="sxE-PU-bhm" secondAttribute="centerX" id="GMa-4M-jfe"/>
+                            <constraint firstItem="sxE-PU-bhm" firstAttribute="centerY" secondItem="0kD-Ty-oLe" secondAttribute="centerY" id="JL0-lV-DAY"/>
+                            <constraint firstItem="edI-yx-4cd" firstAttribute="top" secondItem="0kD-Ty-oLe" secondAttribute="topMargin" constant="-88" id="bDC-9H-feK"/>
+                            <constraint firstItem="edI-yx-4cd" firstAttribute="leading" secondItem="huZ-P5-1H3" secondAttribute="leading" id="jUZ-og-Ob5"/>
+                            <constraint firstItem="huZ-P5-1H3" firstAttribute="top" secondItem="edI-yx-4cd" secondAttribute="bottom" constant="35" id="tBi-yA-8BU"/>
+                            <constraint firstItem="edI-yx-4cd" firstAttribute="trailing" secondItem="huZ-P5-1H3" secondAttribute="trailing" id="uHS-CQ-XOk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="L8U-JC-Km7"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="電話番号スキャナー" id="wVo-kA-6lm">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="camera" id="3YX-bL-fMe">
+                            <connections>
+                                <action selector="scanReceipts:" destination="s7h-RD-IyR" id="jut-1M-USt"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="activityIndicator" destination="sxE-PU-bhm" id="khx-tk-Ach"/>
+                        <outlet property="imagePick" destination="edI-yx-4cd" id="F4A-B4-Ufo"/>
+                        <outlet property="textView" destination="huZ-P5-1H3" id="NYB-Hc-xC0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eft-1V-m4a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1903" y="-435"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="HfA-3g-zCz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="i5r-EK-i2f" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kbA-YY-ZQj">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="yyG-Bk-ZbR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fFe-97-frc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="118.52678571428571"/>
+        </scene>
+        <!--お金スキャナー-->
+        <scene sceneID="WN1-HJ-lO0">
+            <objects>
+                <viewController id="gOS-xz-aEw" customClass="moneyViewController" customModule="OCRtext" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ibx-0G-quE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="f2h-tK-GOT">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <activityIndicatorView hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="1vI-Dh-PBH">
+                                        <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                                        <color key="color" cocoaTouchSystemColor="darkTextColor"/>
+                                    </activityIndicatorView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.60000002384185791" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="center" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TzV-JN-mte">
+                                        <rect key="frame" x="0.0" y="627" width="414" height="261"/>
+                                        <color key="backgroundColor" red="0.92156862750000001" green="0.8980392157" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="261" id="JRv-oX-RSQ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RF8-dz-rOs">
+                                        <rect key="frame" x="0.0" y="8" width="414" height="584"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.92156862750000001" green="0.8980392157" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="TzV-JN-mte" firstAttribute="top" secondItem="RF8-dz-rOs" secondAttribute="bottom" constant="35" id="6cG-7I-Vd7"/>
+                                    <constraint firstItem="TzV-JN-mte" firstAttribute="leading" secondItem="PDj-LB-tkL" secondAttribute="leading" id="H8g-QV-aVC"/>
+                                    <constraint firstItem="1vI-Dh-PBH" firstAttribute="centerY" secondItem="f2h-tK-GOT" secondAttribute="centerY" id="Kah-Eq-3gg"/>
+                                    <constraint firstItem="RF8-dz-rOs" firstAttribute="trailing" secondItem="TzV-JN-mte" secondAttribute="trailing" id="O3E-Of-kPn"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="TzV-JN-mte" secondAttribute="bottom" constant="-34" id="aXN-B5-B5b"/>
+                                    <constraint firstItem="TzV-JN-mte" firstAttribute="centerX" secondItem="1vI-Dh-PBH" secondAttribute="centerX" id="hLS-Ix-o49"/>
+                                    <constraint firstItem="RF8-dz-rOs" firstAttribute="top" secondItem="f2h-tK-GOT" secondAttribute="topMargin" constant="-88" id="poK-fL-6es"/>
+                                    <constraint firstItem="RF8-dz-rOs" firstAttribute="leading" secondItem="TzV-JN-mte" secondAttribute="leading" id="rZl-Ew-cbg"/>
+                                    <constraint firstItem="TzV-JN-mte" firstAttribute="centerX" secondItem="f2h-tK-GOT" secondAttribute="centerX" id="udH-I0-7ex"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="PDj-LB-tkL"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Gc8-LL-gYy"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="お金スキャナー" id="MPf-G3-ifv">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="camera" id="yVZ-H8-0Jj">
+                            <connections>
+                                <action selector="scanReceipts:" destination="gOS-xz-aEw" id="Eli-Ao-oOo"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="activityIndicator" destination="1vI-Dh-PBH" id="UVE-qx-nkf"/>
+                        <outlet property="imagePick" destination="RF8-dz-rOs" id="I6m-xh-Eiq"/>
+                        <outlet property="textView" destination="TzV-JN-mte" id="PEX-Xa-bXT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qFo-P6-I0g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1890" y="943"/>
+        </scene>
+    </scenes>
+</document>
