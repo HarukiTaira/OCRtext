@@ -1,10 +1,4 @@
-//
-//  SceneDelegate.swift
-//  OCRtext
-//
-//  Created by 平良悠貴 on 2019/10/20.
-//  Copyright © 2019 平良悠貴. All rights reserved.
-//
+
 
 import UIKit
 

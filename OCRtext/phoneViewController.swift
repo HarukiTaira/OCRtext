@@ -1,10 +1,4 @@
-//
-//  phoneViewController.swift
-//  OCRtext
-//
-//  Created by 平良悠貴 on 2019/10/19.
-//  Copyright © 2019 平良悠貴. All rights reserved.
-//
+
 
 import UIKit
 import Vision
